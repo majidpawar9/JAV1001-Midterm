@@ -42,7 +42,8 @@
         android:layout_width="140dp"
         android:layout_height="100px"
         android:layout_marginLeft="130dp"
-        android:layout_marginTop="20dp" />
+        android:layout_marginTop="20dp"
+        android:spinnerMode="dialog" />
 
     <Spinner
         android:id="@+id/convertSpinnerTo"
@@ -51,10 +52,13 @@
         android:layout_marginLeft="130dp"
         android:layout_marginTop="20dp" />
 
-    <ImageButton
-        android:id="@+id/imageButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/ic_launcher_background" />
+    <Button
+        android:id="@+id/convertButton"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/design_default_color_error"
+        android:text="Convert" />
 
 </LinearLayout>

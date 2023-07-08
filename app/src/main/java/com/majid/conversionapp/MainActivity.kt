@@ -27,7 +27,7 @@ class MainActivity : AppCompatActivity() {
             }
 
             override fun onNothingSelected(parent: AdapterView<*>?) {
-                TODO("Not yet implemented")
+                Toast.makeText(applicationContext,"Nothing Selected! Please select a unit",Toast.LENGTH_SHORT).show()
             }
         }
         val spinnerTo = findViewById<Spinner>(R.id.convertSpinnerTo)
@@ -43,7 +43,7 @@ class MainActivity : AppCompatActivity() {
             }
 
             override fun onNothingSelected(parent: AdapterView<*>?) {
-                TODO("Not yet implemented")
+                Toast.makeText(applicationContext,"Nothing Selected! Please select a unit",Toast.LENGTH_SHORT).show()
             }
         }
     }
