@@ -14,6 +14,9 @@ import com.majid.conversionapp.databinding.ActivityMainBinding
 ////////////////////////
 // SpinnerFrom is used to define the unit it is being converted FROM
 // SpinnerTo is used to define the unit it is being converted TO
+// The App will turn off if the userInput entered is null
+// I am not able to find a solution for it
+// I am working on it and if i find it i will commit the code with its solution
 ////////////////////////
 class MainActivity : AppCompatActivity() {
     //Units array
@@ -96,8 +99,8 @@ class MainActivity : AppCompatActivity() {
         }
 
         // Getting the userInput and converting it to array of Characters
-        var userInput = findViewById<TextView>(R.id.userInput)
-        var userValue = userInput.getText()
+        val userInput = findViewById<TextView>(R.id.userInput)
+        val userValue = userInput.getText()
 
         // Object of Conversion Class
         val con = Conversion()
@@ -108,7 +111,7 @@ class MainActivity : AppCompatActivity() {
 
         convertButton.setOnClickListener {
             //Calling function of conversion class
-            var result = con.conversionKit(userValue,convertFromString,convertToString)
+            val result = con.conversionKit(userValue,convertFromString,convertToString)
 
             // Setting the result from conversionKit function to answerText
             answerText.setText(result)
