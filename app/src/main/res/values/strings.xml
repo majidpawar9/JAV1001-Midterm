@@ -1,3 +1,8 @@
 <resources>
-    <string name="app_name">ConversionApp</string>
+    <string name="app_name">Conversion App</string>
+    <string name="userInputHint">Enter The Value</string>
+    <string name="convertButton">Convert</string>
+    <string name="outputIndication">The converted value is</string>
+    <string name="outputHint">Converted Value</string>
+    <string name="conversionIndication">Convert the value from:</string>
 </resources>
